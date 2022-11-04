@@ -21,9 +21,10 @@
    
 }
 .portfolio__link {
-    @include transition(box-shadow);
+    display: block;
     text-decoration: none;
     color: $primery-text-color;
+    transition: box-shadow 250ms $timing-function;
 
     &:hover,
     &:focus {
@@ -46,7 +47,6 @@
 }
  .portfolio__overlay {
     @include centerFlex();
-    @include transition(transform);
     position: absolute;
     top: 0;
     left: 0;
@@ -54,6 +54,7 @@
     height: 100%;
     background-color: $overlay-color;
     transform: translateY(101%);
+    transition: transform 250ms $timing-function;
 
 } 
 .portfolio__text {

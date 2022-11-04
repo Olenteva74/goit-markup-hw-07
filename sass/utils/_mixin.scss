@@ -35,20 +35,6 @@
     letter-spacing: $letter-spacing;
     
 }
-@mixin transition($type) {
-    transition: $type 250ms $timing-function;
-
-}
-
-@mixin doubleTransition($type1, $type2) {
-    transition: $type1 250ms $timing-function, $type2 250ms $timing-function;
-    
-}
-
-@mixin tripleTransition($type1, $type2, $type3) {
-    transition: $type1 250ms $timing-function, $type2 250ms $timing-function, $type3 250ms $timing-function;
-
-}
 
 @mixin cardBordered($color) {
     border-right: 1px solid $color;

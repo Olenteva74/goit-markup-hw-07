@@ -1,7 +1,6 @@
 
 // Backdrop 
 .backdrop {
-    @include doubleTransition(opacity, visibility);
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +9,7 @@
     height: 100%;
     background-color: $backdrop-color;
     opacity: 1;
+    transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -21,7 +21,6 @@
 }
 // Modal 
 .modal {
-    @include transition(transform);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,12 +29,12 @@
     padding: 40px;
     background-color: $primeri-white-color;
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function; 
 }
 
 .close-button {
     @include centerFlex();
     @include bordered($backdrop-color, 50%);
-    @include doubleTransition(transform, fill);
     
     position: absolute;
     top: 8px;
@@ -45,6 +44,7 @@
     background-color: $primeri-white-color;
     cursor: pointer;
     fill: $logo-black-color;
+    transition: transform 250ms $timing-function, fill 250ms $timing-function; 
 
     &:hover,
     &:focus {

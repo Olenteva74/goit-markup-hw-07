@@ -4,7 +4,7 @@
     @extend %button;
     @extend %primary-button;
     @include centerButton();
-    @include sizeButton(216px);
+    min-width: 216px;
     padding: 10px 32px;
 }
 
@@ -35,8 +35,10 @@
 
 .portfolio-button {
     @extend %button;
-    @include fontStyle($line-height: 1.62);
-    @include tripleTransition(color, box-shadow, background-color);
+    @include fontStyle(16px, 1.62);
+    color: $title-text-color;
+    transition: background-color 250ms $timing-function, color 250ms $timing-function, 
+                box-shadow 250ms $timing-function;
   
     padding: 6px 22px;
     background-color: $mottled-background-color;

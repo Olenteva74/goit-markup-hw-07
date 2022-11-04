@@ -8,9 +8,9 @@
 
 .site-nav__link {
     @extend %link;
-    @include transition(color);
     color: $title-text-color;
     position: relative;
+    transition: color 250ms $timing-function;
 
     &:hover::after,
     &:focus::after {
@@ -19,7 +19,6 @@
 
 
     &::after {
-        @include transition(width);
         content: "";
         position: absolute;
         left: 0;
@@ -28,6 +27,7 @@
         width: 0%;
         border-radius: 2px;
         background-color: $accent-color;
+        transition: width 250ms $timing-function;
     
     }
 

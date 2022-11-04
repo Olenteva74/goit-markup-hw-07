@@ -14,7 +14,8 @@
 .clients__link {
     @include centerFlex();
     @include bordered($net-icon-color);
-    @include tripleTransition(transform, color, border-color);
+    transition: transform 250ms $timing-function, color 250ms $timing-function, 
+                 border-color 250ms $timing-function;
 
     width: 100%;
     height: 100%;
