@@ -1,0 +1,34 @@
+.clients__title {
+    @extend %title;
+}
+
+.clients__list {
+    @extend %list;
+    @include layoutFlex();
+   
+}
+.clients__item {
+    width: 170px;
+    height: 92px;
+}
+.clients__link {
+    @include centerFlex();
+    @include bordered($net-icon-color);
+    @include tripleTransition(transform, color, border-color);
+
+    width: 100%;
+    height: 100%;
+    color: $net-icon-color;
+    transform: scale(1);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        color: $accent-color;
+        transform: scale(1.01);
+    }
+}
+
+.clients__icon {
+        fill: currentColor;
+    }

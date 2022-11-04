@@ -1,0 +1,21 @@
+.logo {
+    @include fontStyle(26px, 1.19);
+    color: $logo-black-color;
+    font-family: $logo-font-family;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav__logo {
+    margin-right: 93px;
+}
+.logo__label--accent {
+    color: $accent-color;
+}
+.logo__label--white {
+    color: $primeri-white-color;
+}
+.page-footer__logo {
+    margin-bottom: 20px;
+
+}

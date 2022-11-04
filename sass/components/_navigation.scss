@@ -1,0 +1,46 @@
+.site-nav {
+    @include centerFlex();
+}
+.site-nav__list {
+    @extend %list;
+    @include layoutFlex(50px);
+}
+
+.site-nav__link {
+    @extend %link;
+    @include transition(color);
+    color: $title-text-color;
+    position: relative;
+
+    &:hover::after,
+    &:focus::after {
+        width: 100%;
+    }
+
+
+    &::after {
+        @include transition(width);
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -34px;
+        height: 4px;
+        width: 0%;
+        border-radius: 2px;
+        background-color: $accent-color;
+    
+    }
+
+}
+
+.site-nav__link--current {
+    color: $accent-color; 
+
+    &::after {
+        width: 100%;
+    }
+
+}
+
+
+

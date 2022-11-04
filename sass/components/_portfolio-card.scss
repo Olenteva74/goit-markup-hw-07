@@ -1,0 +1,63 @@
+.portfolio__list {
+    @extend %list;
+    @include layoutFlex();
+    flex-wrap: wrap;
+}
+
+.portfolio__border {
+    @include cardBordered($card-border-color);
+    padding: 20px 24px;
+
+}
+
+.portfolio__title {
+    @include fontStyle(18px, 2, 0.06em);
+    margin-bottom: 4px;   
+    color: $title-text-color;
+    
+}
+.portfolio__label {
+    @include fontStyle(16px, 1.88);
+   
+}
+.portfolio__link {
+    @include transition(box-shadow);
+    text-decoration: none;
+    color: $primery-text-color;
+
+    &:hover,
+    &:focus {
+        box-shadow: $card-box-shadow;
+    } 
+
+    &:hover .portfolio__overlay,
+    &:focus .portfolio__overlay {
+    transform: translateY(0);
+
+}
+    
+} 
+
+.portfolio__thumb {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+ .portfolio__overlay {
+    @include centerFlex();
+    @include transition(transform);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color;
+    transform: translateY(101%);
+
+} 
+.portfolio__text {
+    @include fontStyle(18px, 1.56);
+    padding: 0 24px;
+    color: $primeri-white-color;
+}

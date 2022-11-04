@@ -1,0 +1,60 @@
+.net__list {
+    @extend %list;
+    @include centerFlex();
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.net__item {
+    width: 44px;
+    height: 44px;
+}
+
+.net__link {
+    @include centerFlex();
+    @include doubleTransition(background-color, color);
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: $net-icon-color;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primeri-white-color; 
+    }  
+
+}
+
+.net__icon {
+    fill: currentColor;
+}
+
+
+// Footer-net 
+.page-footer__net {
+    @include layoutFlex(20px);
+    margin-left: 70px;
+    margin-right: 93px;
+    width: 206px;
+    height: 80px; 
+    flex-direction: column;
+}
+
+.net__list--footer {
+    padding-bottom: 0;
+}
+.net__link--footer {
+    @include doubleTransition(background-color, transform);
+
+    color: $primeri-white-color;
+    background-color: $adress-net-color;
+    transform: scale(1);
+
+    &:hover,
+    &r:focus {
+        background-color: $accent-color;
+        transform: scale(1.1);
+    }
+
+}
+

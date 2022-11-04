@@ -1,0 +1,23 @@
+.hero__section {
+    max-width: 1600px;
+    height: 600px;
+   
+    margin: 0 auto;
+    padding: 200px 0;
+
+    background-color: var(--hero-background-color);
+    background-image: $hero-gradient, url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__title {
+    @include fontStyle(44px, 1.36, 0.06em);
+    width: 697px;
+    margin: 0 auto 30px;
+    color: $primeri-white-color; 
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,64 @@
+@mixin centerButton($type: block) {
+    display: $type;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin sizeButton($width: 200px, $height: 50px) {
+    width: $width;
+    height: $height;
+    
+}
+
+@mixin centerFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@mixin layoutFlex($gap: 30px) {
+    display: flex;
+    gap: $gap;
+}
+
+@mixin formBorder($color: $form-border-color) {
+    border: 1px solid $color;
+    border-radius: 4px;
+    outline: none;
+    
+}
+
+@mixin fontStyle($font-size: 14px, $line-height: 1.71, $letter-spacing: .03em ) {
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    
+}
+@mixin transition($type) {
+    transition: $type 250ms $timing-function;
+
+}
+
+@mixin doubleTransition($type1, $type2) {
+    transition: $type1 250ms $timing-function, $type2 250ms $timing-function;
+    
+}
+
+@mixin tripleTransition($type1, $type2, $type3) {
+    transition: $type1 250ms $timing-function, $type2 250ms $timing-function, $type3 250ms $timing-function;
+
+}
+
+@mixin cardBordered($color) {
+    border-right: 1px solid $color;
+    border-bottom: 1px solid $color;
+    border-left: 1px solid $color;
+    
+}
+
+@mixin bordered($color, $radius: 4px) {
+    border: 1px solid $color;
+    border-radius: $radius;
+    
+}
