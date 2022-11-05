@@ -1,4 +1,5 @@
-.team__section {
+.team {
+    @extend %section;
     background: $mottled-background-color;
 }
 .team__title {

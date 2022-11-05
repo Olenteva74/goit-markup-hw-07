@@ -1,5 +1,5 @@
-.examples__section {
-    padding: 94px 0;  
+.examples {
+    @extend %section;
 }
 
 .examples__title {

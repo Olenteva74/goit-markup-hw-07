@@ -47,6 +47,10 @@ img {
   margin: -1px;
 }
 
+.portfolio, .clients, .team, .examples {
+  padding: 94px 0;
+}
+
 .portfolio-button, .footer-button, .modal-button, .hero__button {
   font-family: inherit;
   cursor: pointer;
@@ -78,7 +82,7 @@ img {
   color: #2196F3;
 }
 
-.adress__list, .portfolio__list, .portfolio__filter, .clients__list, .net__list, .team__list, .examples__list, .features__list, .contacts__list, .site-nav__list {
+.adress__list, .portfolio__list, .portfolio__filter, .clients__list, .net__list, .team__list, .examples__list, .features__list, .contacts, .site-nav__list {
   list-style-type: none;
 }
 
@@ -167,12 +171,12 @@ img {
   margin-bottom: 20px;
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   gap: 30px;
 }
 
-.contacts {
+.contacts__item {
   height: 16px;
 }
 
@@ -196,7 +200,7 @@ img {
   fill: currentColor;
 }
 
-.hero__section {
+.hero {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -265,7 +269,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.features__section {
+.features {
   padding: 94px 0 0;
 }
 
@@ -298,10 +302,6 @@ img {
   text-transform: uppercase;
 }
 
-.examples__section {
-  padding: 94px 0;
-}
-
 .examples__list {
   display: flex;
   gap: 30px;
@@ -331,7 +331,7 @@ img {
   text-transform: uppercase;
 }
 
-.team__section {
+.team {
   background: #F5F4FA;
 }
 

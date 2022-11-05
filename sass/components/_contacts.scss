@@ -1,9 +1,9 @@
-.contacts__list {
+.contacts {
     @extend %list;
     @include layoutFlex();
 
 }
-.contacts {
+.contacts__item {
     height: 16px;
 
 }
