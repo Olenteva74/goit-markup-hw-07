@@ -1,4 +1,4 @@
-.net__list {
+.net {
     @extend %list;
     @include centerFlex();
     gap: 10px;
@@ -32,7 +32,7 @@
 
 
 // Footer-net 
-.page-footer__net {
+.net__wrapper--footer {
     @include layoutFlex(20px);
     margin-left: 70px;
     margin-right: 93px;
